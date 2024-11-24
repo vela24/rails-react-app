@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+class Api::V1::PostsController < ApplicationController
   before_action :set_post, only: %i[ show update destroy ]
 
   # GET /posts
@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
     render json: @posts
   end
-
+ 
   # GET /posts/1
   def show
     render json: @post

@@ -10,7 +10,8 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     # where your request comes from ex: apps IP address or URL
     # origins "http://Localhost:3000"
-    origins "http://127.0.0.1:5173"
+    # origins "http://127.0.0.1:5173"
+    origins "*"
 
     resource "*",
       headers: :any,
